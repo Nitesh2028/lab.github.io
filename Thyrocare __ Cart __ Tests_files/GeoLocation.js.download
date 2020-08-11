@@ -1,0 +1,54 @@
+﻿function getGeoLocation() {
+    window.navigator.geolocation.getCurrentPosition(onNavigationSuccess, onNavigationFailure);
+}
+
+function onNavigationSuccess(n) {
+    var t = n.coords.latitude,
+        i = n.coords.longitude,
+        r = t + "," + i;
+    localStorage.setItem(LOCALSTORAGE.LatLong, r);
+    getCityFromLatLong(t, i);
+}
+
+function getCityFromLatLong(n, t) {
+    if (n && t && n !== emptyString && t !== emptyString) {
+        var i = 'https://maps.googleapis.com/maps/api/geocode/json?&sensor=true&key=AIzaSyBcm2CJDh69483Z9dZrSNRqjX1l-nuNo-o';
+        i = i + "&latlng=" + n + "," + t;
+        console.log(i);
+        $.ajax({
+            method: GET,
+            url: i,
+            success: function (n) {
+                if (console.log("user location : ", n), n && n.error_message) {
+                    console.log("There was an error locating you");
+                    return false;
+                }               
+                var t = extractCityFromLocationObj(n);
+                t !== emptyString && $("#location").text(t);
+            }
+        });
+    }
+}
+
+function onNavigationFailure(n) {
+    console.log(n);
+}
+
+function extractCityFromLocationObj(n) {
+    var t = emptyString;
+    return n && n.results.length > 0 && n.results.map(function (n) {
+        n.address_components.map(function (n) {
+            n.types.map(function (i) {
+                (i === political || i === sublocality) && t === emptyString && (t = n.long_name, localStorage.setItem(LOCALSTORAGE.User_location, t), CreateLocationSession(t));
+            });
+        });
+    }), t;
+}
+
+function CreateLocationSession(location) {
+    var input = {
+        SessionName: SESSION.Location,
+        SessionValue: location
+    };
+    CreateSession(input);
+}

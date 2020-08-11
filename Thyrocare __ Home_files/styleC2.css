@@ -1,0 +1,36 @@
+@media only screen and (min-width: 787px) {
+    .ul-nav-header {
+        flex-direction: row
+    }
+}
+
+.header-align {
+    text-align: right
+}
+
+@media only screen and (max-width: 800px) {
+    .header-align {
+        text-align: center
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .top-main {
+        margin-top: 8px
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .logo {
+        padding-top: 5px
+    }
+}
+
+.header-nav-link {
+    display: inline-block
+}
+
+    .header-nav-link: hover {
+        border-bottom: 2px solid #fff;
+        padding-bottom: 5px
+    }

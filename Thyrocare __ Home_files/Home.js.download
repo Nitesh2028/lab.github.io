@@ -1,0 +1,45 @@
+﻿$(document).ready(function () {    
+    fucRecreateTestsMasterLocalStorage();
+    fncReCreateCartSession();
+});
+
+function fucRecreateTestsMasterLocalStorage() {
+    if (localStorage.getItem(LOCALSTORAGE.ITEMS) == null) {
+        localStorage.setItem('SelectedItems', "");
+        localStorage.setItem('ITEMS', "");
+    }
+    if (localStorage.getItem(LOCALSTORAGE.MstTests) == null) {    
+        CreateTestMasterLocalStorage();
+    }
+    else {
+        var data = JSON.parse(localStorage.getItem(LOCALSTORAGE.MstTests));
+        var timestamp = data.timestamp;
+        var now = new Date().getTime();
+        if (now > timestamp) {
+            CreateTestMasterLocalStorage();
+        }
+    }
+}
+
+function CreateTestMasterLocalStorage() {
+    $.ajax({
+        type: GET,
+        url: "/api/Products/" + ALL,
+        contentType: AjaxCallContentType,
+        dataType: AjaxCallJson,
+        async: false,
+        cache: false,
+        success: function (Response) {
+            console.log("/api/Products --> Success");
+            var timestamp = new Date();
+            timestamp.setDate(timestamp.getDate() + SerchBoxTestMasterValidDays);
+            var object = { value: Response.MASTERS, timestamp: timestamp.getTime() };
+            localStorage.setItem(LOCALSTORAGE.MstTests, JSON.stringify(object));
+        },
+        error: function () {
+            console.log("/api/Products --> Failed");
+            return false;
+        }
+    });    
+    return true;
+}

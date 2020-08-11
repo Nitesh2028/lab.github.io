@@ -1,0 +1,493 @@
+﻿$(document).ready(function () {
+    updateCartCount();
+});
+
+function addOrBuyAction_Home(event, self, buyNow, cantGray) {
+    var $element = $($(self).find('span.hide'));
+    var jsonItem = $element.html();
+    //my Code To add minimum ben in localstorage
+    var item = jsonItem.replace(/(<([^>]+)>)/ig, '');
+    item = JSON.parse(item);
+    var selecteditem = item.code;
+    var localStoreItems = localStorage.getItem(LOCALSTORAGE.SelectedItems);
+    if (!(localStoreItems == null)) {
+        if (localStoreItems.includes("PROJ") && selecteditem.includes("PROJ")) {
+            AlertBox('Please select only one Offer');
+            return false;
+        }
+    }
+    if (selecteditem.includes("PROJ")) {
+        localStorage.setItem('Ben_Min', item.ben_min);
+        localStorage.setItem('ben_multiple', item.ben_multiple);
+    }
+    //end my code
+
+    addItemToGlobalList(jsonItem);
+    SetLocalSelectedItem(jsonItem);
+    fncReCreateCartSession();
+    $('#bookPageLink')[0].click();
+}
+
+function addOrBuyAction(event, self, buyNow, cantGray) {
+    var $element = $($(self).find('span.hide'));
+    var isbuyLink = $(self).find("a[data-link]") && $(self).find("a[data-link]").attr("data-link") == 'addTestAction' ? true : false;
+    var isbuyLink1 = $(self).find("a[data-link]") && $(self).find("a[data-link]").attr("data-link") == 'bookTestAction' ? true : false;
+    var jsonItem = $element.html();
+
+    if (compareStr($(self).children()[1].innerHTML, Already_Added_To_Cart) || compareStr($(self).children()[1].innerHTML, emptyString)) {
+        return false;
+    }
+
+    if (compareStr($(self).children()[1].innerHTML, Delete_From_Cart)) {
+        var item = jsonItem.replace(/(<([^>]+)>)/ig, '');
+        item = JSON.parse(item);
+        deleteItemFromGlobalList(item.code);
+        DeleteFromCartTestRevert(item.code);
+        RemoveLocalSelectedItem(item.code);
+        if (item.code.includes("PROJ")) {
+            localStorage.removeItem('Ben_Min');
+            localStorage.removeItem('ben_multiple');
+        }
+    }
+    else {
+        //addItemToGlobalList(jsonItem);
+        if (buyNow) {
+            //addItemToGlobalList(jsonItem);
+            var item = jsonItem.replace(/(<([^>]+)>)/ig, '');
+            item = JSON.parse(item);
+            var selecteditem = item.code;
+
+            var localStoreItems = localStorage.getItem(LOCALSTORAGE.SelectedItems);
+            if (!(localStoreItems == null)) {
+                if (localStoreItems.includes("PROJ") && selecteditem.includes("PROJ")) {
+                    AlertBox('Please select only one Offer');
+                    return false;
+                }
+                else {
+                    addItemToGlobalList(jsonItem);
+                    DeleteFromCartTest(item.code);
+                    if (isbuyLink) {
+                        SetLocalSelectedItem(jsonItem);
+                    } else {
+                        cantGray ? null : SetLocalSelectedItem(jsonItem);
+                    }
+                }
+            }
+            else {
+                addItemToGlobalList(jsonItem);
+                DeleteFromCartTest(item.code);
+                if (isbuyLink) {
+                    SetLocalSelectedItem(jsonItem);
+                } else {
+                    cantGray ? null : SetLocalSelectedItem(jsonItem);
+                }
+            }
+            if (selecteditem.includes("PROJ")) {
+                localStorage.setItem('Ben_Min', item.ben_min);
+                localStorage.setItem('ben_multiple', item.ben_multiple);
+            }
+            //DeleteFromCartTest(item.code);
+            //if (isbuyLink1) {
+            //    SetLocalSelectedItem(jsonItem);
+            //} else {
+            //    cantGray ? null : SetLocalSelectedItem(jsonItem);
+            //}
+            fncReCreateCartSession();
+            $('#cartPageLink')[0].click();
+        } else {
+            var item = jsonItem.replace(/(<([^>]+)>)/ig, '');
+            item = JSON.parse(item);
+            var selecteditem = item.code;
+
+            var localStoreItems = localStorage.getItem(LOCALSTORAGE.SelectedItems);
+            if (!(localStoreItems == null)) {
+                if (localStoreItems.includes("PROJ") && selecteditem.includes("PROJ")) {
+                    AlertBox('Please select only one Offer');
+                    return false;
+                }
+                else {
+                    addItemToGlobalList(jsonItem);
+                    DeleteFromCartTest(item.code);
+                    if (isbuyLink) {
+                        SetLocalSelectedItem(jsonItem);
+                    } else {
+                        cantGray ? null : SetLocalSelectedItem(jsonItem);
+                    }
+                }
+            }
+            else {
+                addItemToGlobalList(jsonItem);
+                DeleteFromCartTest(item.code);
+                if (isbuyLink) {
+                    SetLocalSelectedItem(jsonItem);
+                } else {
+                    cantGray ? null : SetLocalSelectedItem(jsonItem);
+                }
+            }
+            if (selecteditem.includes("PROJ")) {
+                localStorage.setItem('Ben_Min', item.ben_min);
+                localStorage.setItem('ben_multiple', item.ben_multiple);
+            }
+            //DeleteFromCartTest(item.code);
+            //if (isbuyLink) {
+            //    SetLocalSelectedItem(jsonItem);
+            //} else {
+            //    cantGray ? null : SetLocalSelectedItem(jsonItem);
+            //}
+        }
+    }
+    setTimeout(function () {
+        updateCartCount();
+    }, 500);
+    fncReCreateCartSession();
+}
+
+function SetLocalSelectedItem(item) {
+    var localStoreItems = localStorage.getItem(LOCALSTORAGE.SelectedItems);
+    var storeId;
+    if (localStoreItems) {
+        if (localStoreItems.indexOf(JSON.parse(item).code) < 0) {
+            storeId = localStoreItems + commaString + JSON.parse(item).code;
+        } else {
+            return false;
+        }
+    } else {
+        storeId = commaString + JSON.parse(item).code;
+    }
+    localStorage.setItem(LOCALSTORAGE.SelectedItems, storeId);
+    setSelected();
+}
+
+function setSelected() {
+    var localStoreSelectedItems = localStorage.getItem(LOCALSTORAGE.SelectedItems);
+    var storeIds;
+    if (localStoreSelectedItems == null) {
+        storeIds = emptyString;
+    }
+    else {
+        storeIds = localStoreSelectedItems.indexOf(commaString) != -1 ? localStoreSelectedItems.split(commaString) : localStoreSelectedItems;
+    }
+
+    var selectedBox;
+    var relatedTests;
+
+    if (storeIds) {
+        if ($.isArray(storeIds)) {
+            for (var i = 0; i < storeIds.length; i++) {
+                var sId = storeIds[i];
+                if (sId != emptyString) {
+                    selectedBox = $("#" + sId);
+                    relatedTests = selectedBox.find("input[relTest]").val();
+                    showSelected(sId);
+                    DeleteFromCartTest(sId);
+                    setSelectedTests(relatedTests);
+                }
+            }
+        } else {
+            selectedBox = $("#" + storeIds);
+            relatedTests = selectedBox.find("input[relTest]").val();
+            showSelected(storeIds);
+            DeleteFromCartTest(storeIds);
+            setSelectedTests(relatedTests);
+        }
+    }
+}
+
+function setSelectedTests(tests) {
+    if (tests != null) {
+        var selectedTests = tests.indexOf(commaString) != -1 ? tests.split(commaString) : tests;
+        if ($.isArray(selectedTests)) {
+            for (var i = 0; i < selectedTests.length; i++) {
+                var tId = selectedTests[i];
+                showSelected(tId);
+                AlreadyAddedtoCartTest(tId);
+            }
+        } else {
+            showSelected(selectedTests);
+            AlreadyAddedtoCartTest(selectedTests);
+        }
+    }
+}
+
+function showSelected(boxId) {
+    if (boxId != "") {
+        //$("#" + boxId).find(".related-test1").css('background-color', '	#D0D0D0');
+        //$("#" + boxId).find(".related-test1").css('cursor', 'not-allowed');
+
+        $("[id='" + boxId+"'").find(".related-test1").css('background-color', '	#D0D0D0');
+        $("[id='" + boxId + "'").find(".related-test1").css('cursor', 'not-allowed');
+    }
+}
+
+function AlreadyAddedtoCartTest(test) {
+    //$("#Bookbtn_" + test).hide();
+    //$("#Addedbtn_" + test).show();
+
+    $("[id='Bookbtn_" + test + "'").hide();
+    $("[id='Addedbtn_" + test + "'").show();
+}
+
+function RemoveLocalSelectedItem(code) {
+    var localStoreItems = localStorage.getItem(LOCALSTORAGE.SelectedItems);
+    var storeId;
+    if (localStoreItems) {
+        if (localStoreItems.indexOf(commaString + code) < 0) {
+            storeId = localStoreItems.replace(commaString + code, emptyString);
+            localStorage.setItem(LOCALSTORAGE.SelectedItems, storeId);
+        }
+    }
+    SetRemove(code);
+}
+
+function SetRemove(code) {
+    DeleteCodeFromLocalSelectedItems(code);
+    hideSelected(code);
+    var selectedBox = $("#" + code);
+    var relatedTests = selectedBox.find("input[relTest]").val();
+    removeSelectedTests((relatedTests == "") ? code : relatedTests);
+}
+
+function removeSelectedTests(tests) {
+    if (tests != null) {
+        var selectedTests = tests.indexOf(commaString) != -1 ? tests.split(commaString) : tests;
+        if ($.isArray(selectedTests)) {
+            for (var i = 0; i < selectedTests.length; i++) {
+                var tId = selectedTests[i];
+                hideSelected(tId);
+                AddedtoCartTest(tId);
+            }
+        } else {
+            hideSelected(selectedTests);
+            AddedtoCartTest(selectedTests);
+        }
+    }
+}
+
+function AddedtoCartTest(test) {
+    //$("#Bookbtn_" + test).show();
+    //$("#Addedbtn_" + test).hide();
+    $("[id='Bookbtn_" + test + "'").show();
+    $("[id='Addedbtn_" + test + "'").hide();
+}
+
+function DeleteFromCartTest(test) {
+    //$("#Bookbtn_" + test).hide();
+    //$("#Addedbtn_" + test).hide();
+    //$("#Deletebtn_" + test).show();
+
+    $("[id='Bookbtn_" + test + "'").hide();
+    $("[id='Addedbtn_" + test + "'").hide();
+    $("[id='Deletebtn_" + test + "'").show();
+}
+
+function DeleteFromCartTestRevert(test) {
+    //$("#Bookbtn_" + test).show();
+    //$("#Addedbtn_" + test).hide();
+    //$("#Deletebtn_" + test).hide();    
+    $("[id='Bookbtn_" + test + "'").show();
+    $("[id='Addedbtn_" + test + "'").hide();
+    $("[id='Deletebtn_" + test + "'").hide();
+}
+
+function hideSelected(boxId) {
+    //$("#" + boxId).find(".related-test1").css('background-color', 'white');
+    $("[id='" + boxId+"'").find(".related-test1").css('background-color', 'white');
+}
+
+function updateCartCount() {
+    var globallyAddedItems = getObjectFromLS(lsObject.ITEMS);
+
+    //my code start
+    var myarray = Object.keys(globallyAddedItems);
+    var child = JSON.parse(localStorage.getItem(LOCALSTORAGE.MstTests));
+
+    var arrsecond = [], arrthird = [];
+    if (child != null) {
+        for (var i = 0; i < child.value.PROFILE.length; i++) {
+            arrsecond[i] = child.value.PROFILE[i].code;
+        }
+        for (var i = 0; i < child.value.OFFER.length; i++) {
+            arrthird[i] = child.value.OFFER[i].code;
+        }
+    }
+    var s = [], t = [];
+
+    myarray.forEach((e1) => arrsecond.forEach((e2) => {
+        if (e1 == e2) {
+            s.push(arrsecond.indexOf(e1));
+        }
+    }));
+
+    myarray.forEach((e1) => arrthird.forEach((e2) => {
+        if (e1 == e2) {
+            t.push(arrthird.indexOf(e1));
+        }
+    }));
+
+    if (t != undefined) {
+
+        for (var i = 0; i < t.length; i++) {
+            var arr = [];
+            for (var j = 0; j < child.value.OFFER[t[i]].childs.length; j++) {
+                var chitem = child.value.OFFER[t[i]].childs[j].code;
+                arr[j] = chitem;
+            }
+
+
+            $.each(arr, function (id, val) {
+                arr[id] = $.trim(val);
+            });
+            if (arr != undefined) {
+                for (k = 0; k < myarray.length; k++) {
+                    arr.forEach(function (el) {
+                        if (myarray.indexOf(el) > -1) {
+                            myarray.splice(el, 1);
+                            DeleteCodeFromLocalSelectedItems(el)
+                        }
+                    });
+                }
+            }
+        }
+    }
+
+    if (s != undefined) {
+
+        for (var i = 0; i < s.length; i++) {
+            var arr = [];
+            for (var j = 0; j < child.value.PROFILE[s[i]].childs.length; j++) {
+                var chitem = child.value.PROFILE[s[i]].childs[j].code;
+                arr[j] = chitem;
+            }
+
+
+            $.each(arr, function (id, val) {
+                arr[id] = $.trim(val);
+            });
+            if (arr != undefined) {
+                for (k = 0; k < myarray.length; k++) {
+                    arr.forEach(function (el) {
+                        if (myarray.indexOf(el) > -1) {
+                            myarray.splice(el, 1);
+                            DeleteCodeFromLocalSelectedItems(el)
+                        }
+                    });
+                }
+            }
+        }
+    }
+    //my code end
+
+
+    //var itemsInCart = globallyAddedItems ? Object.keys(globallyAddedItems).length : 0;
+    var itemsInCart = globallyAddedItems ? Object.keys(myarray).length : 0;
+
+    $('.cart-number').text(itemsInCart);
+}
+
+//add an item to global item list
+function addItemToGlobalList(item) {
+    if (item) {
+        item = item.replace(/(<([^>]+)>)/ig, '');
+        item = JSON.parse(item);
+        let itemList = getObjectFromLS(lsObject.ITEMS);
+        if (item.type == "OFFER") {
+            itemList[item.code] = {
+                code: item.code,
+                name: item.name,
+                rate: item.rate.offer_rate,
+                type: item.type,
+                testcount: item.test_count,
+                fasting: item.fasting,
+                bookingtype: item.bookingtype,
+                testname: item.testnames,
+                projectid: item.rate.id
+            };
+        }
+        else {
+            itemList[item.code] = {
+                code: item.code,
+                name: item.name,
+                rate: item.rate.b2c,
+                type: item.type,
+                testcount: item.test_count,
+                fasting: item.fasting,
+                bookingtype: item.bookingtype,
+                testname: item.testnames,
+                projectid: item.rate.id
+            };
+        }
+        setObjectToLS(lsObject.ITEMS, itemList);
+    } else {
+        console.log('please pass item to add');
+    }
+}
+
+function setObjectToLS(prop, value) {
+    localStorage.setItem(prop, JSON.stringify(value));
+}
+
+function deleteItemFromGlobalList(id) {
+    if (id) {
+        var usedItems = getUniqueItemsFromArray(getItemsFromAllBenificiaries());
+        if (usedItems === null) {
+            var globalItems = getObjectFromLS(lsObject.ITEMS);
+            delete globalItems[id];
+            setObjectToLS(lsObject.ITEMS, globalItems);
+            renderHtml(lsObject.ITEMS);
+            return;
+        }
+        if (usedItems.indexOf(id) !== -1) {
+            var item = getObjectFromLS(lsObject.ITEMS, id, 'name');
+            alertModal(true, { title: 'item is already present', body: item + ' is already present in a beneficiary. First remove the beneficiary then remove it' })
+        } else {
+            var globalItems = getObjectFromLS(lsObject.ITEMS);
+            delete globalItems[id];
+            setObjectToLS(lsObject.ITEMS, globalItems);
+            renderHtml(lsObject.ITEMS);
+            updateCartCount();
+        }
+    } else {
+        console.log('pass id of object to delete from global list');
+    }
+}
+
+function DeleteCodeFromLocalSelectedItems(code) {
+    var localStoreSelectedItems = localStorage.getItem(LOCALSTORAGE.SelectedItems);
+    localStorage.setItem(LOCALSTORAGE.SelectedItems, localStoreSelectedItems.replace(commaString + code, emptyString));
+}
+
+function LeadGenerate() {
+
+    if (localStorage.getItem('check') == 1) {
+        var latlng = localStorage.getItem("LatLong") != null ? localStorage.getItem("LatLong") : "0,0";
+        var array = latlng.split(',');
+
+        var input = {
+            Name: emptyString,
+            Age: emptyString,
+            Gender: emptyString,
+            Pincode: emptyString,
+            Mobile: emptyString,
+            Email: emptyString,
+            Latitude: array[0],
+            Longitude: array[1],
+            Camptype: "WTC PUBLIC MISSED ORDER"
+        };
+
+        $.ajax({
+            type: POST,
+            url: "/api/LeadGeneration",
+            contentType: AjaxCallContentType,
+            data: JSON.stringify(input),
+            dataType: AjaxCallJson,
+            async: false,
+            cache: false,
+            success: function (Response) {
+                console.log("Success");
+            },
+            error: function () {
+                return false;
+            }
+        });
+    }
+}

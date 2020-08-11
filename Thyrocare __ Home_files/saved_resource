@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <link rel="icon" href="https://kit-cdn.com/5afedf1d1e6ea005384f8f15/v104/images/favicon.ico?v=104">
+    <title>Thyrocare :: Home </title>
+    <meta property="og:title" content=" - Thyrocare">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wellness.thyrocare.com/HealthTips/Thyrocare :: Home">
+    <meta property="og:image">
+    <meta name="keywords" content="diagnostic labs, diagnosis,diagnostic laboratories, diagnostics lab, diagnostic lab near me,diagnostic laboratory services">
+    <meta name="description" content="Thyrocare is the best service providing Diagnosis centre and Pathology lab in India. We provide heathcare services at affordable rates.">
+    <link href="/5afedf1d1e6ea005384f8f15/v104/css/bootstrap6378.min.css" rel="stylesheet">
+    <link href="/5afedf1d1e6ea005384f8f15/v104/css/bootstrap7011.css" rel="stylesheet">
+    <link href="/5afedf1d1e6ea005384f8f15/v104/css/bootstrap-theme.15428700753923700.min.css" rel="stylesheet">
+    <link href="/5afedf1d1e6ea005384f8f15/v104/css/bootstrap-theme2621.min.css" rel="stylesheet">
+    <link href="/5afedf1d1e6ea005384f8f15/v104/css/style1339.css" rel="stylesheet">
+    <link href="/5afedf1d1e6ea005384f8f15/v104/css/media6250.css" rel="stylesheet">
+    <link href="/5afedf1d1e6ea005384f8f15/v104/css/owl.theme.default6575.min.css" rel="stylesheet">
+    <link href="/5afedf1d1e6ea005384f8f15/v104/css/owl.carousel6498.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/5afedf1d1e6ea005384f8f15/v104/css/font-awesome5039.min.css">
+    <link rel="stylesheet" href="/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/css9196.css" rel="stylesheet">
+    <link href="/5afedf1d1e6ea005384f8f15/v104/css/share-modal9599.min.css" rel="stylesheet">
+    <link href="/styleC1.css" rel="stylesheet">
+    <link href="/styleC2.css" rel="stylesheet">
+    <link href="/Master.css?v=14thJul2019" rel="stylesheet" />
+    <script src="/5afedf1d1e6ea005384f8f15/v104/js/jquery1654.min.js"></script>
+    <script src="/JScripts/Constraints.js"></script>
+    <script src="/JScripts/Master.js?v=09thJune2019"></script>
+    <script src="/JScripts/Session.js"></script>
+    <script src="/JScripts/GeoLocation.js"></script>
+</head>
+<body>
+
+    <script>
+        $(document).ready(function () {
+            var width = $(window).width();
+            if (width < 768) {
+                $("#cartPageLink").hide();
+                $("#cartPageLinkMobile").show();
+
+            }
+            if (width > 768) {
+                $("#cartPageLink").show();
+                $("#cartPageLinkMobile").hide();
+            }
+
+            $(window).resize(function () {
+                var width = $(window).width();
+                if (width < 768) {
+                    $("#cartPageLink").hide();
+                    $("#cartPageLinkMobile").show();
+
+                }
+                if (width > 768) {
+                    $("#cartPageLink").show();
+                    $("#cartPageLinkMobile").hide();
+                }
+            });
+
+        });
+        $(window).bind('mousewheel', function (event) {
+            if (event.originalEvent.wheelDelta >= 0) {
+                $('#onscrollrm').show();
+                $('#header').css("height", "auto");
+            }
+            else {
+                $('#onscrollrm').hide();
+                $('#header').css("height", "65px");
+            }
+        });
+        var lastScrollTop = 0;
+        $(window).on('scroll', function () {
+            st = $(this).scrollTop();
+            if (st < lastScrollTop) {
+                $('#onscrollrm').show();
+                $('#header').css("height", "auto");
+            }
+            else {
+                $('#onscrollrm').hide();
+                $('#header').css("height", "65px");
+            }
+            lastScrollTop = st;
+        });
+
+        function emptySearch() {
+
+            var search = $('#search').val().length;
+            if (search == 0) {
+                window.location.href = "/Cart/Tests";
+            }
+        }
+    </script>
+    <div k-partial="">
+        <script async="" src="/gtag/js1565.js"></script>
+        <script>
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            window.dataLayer = window.dataLayer || [];
+            gtag("js", new Date);
+            gtag("config", "UA-98526607-40")
+        </script>
+    </div>
+    <div class="alert-message-box" id="alertMessageBox">
+        <div class="overlay">
+            <div class="message-box" id="alertMessageContent">
+                <div class="title"></div>
+                <div class="message"></div>
+                <div class="action-bar">
+                    <a class="btnCancel">Cancel</a>
+                    <input type="button" class="btnSubmit" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div k-partial="" id="header" class="fixed-header">
+        <section class="topheader" id="onscrollrm">
+            <div class="container remove-max-width">
+                <div class="row">
+                    <div class="col-md-4 logo">
+                        <a href="/Home">
+                            <img src="/5afedf1d1e6ea005384f8f15/v104/images/Thyrocarelogo.png">
+                        </a>
+                    </div>
+                    <div class="col-md-8 logo-rigth header-align">
+                        <a style="text-decoration:none;cursor:default;">Download App</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.illionsoft.thyrocare" title="Download from play store" target="_blank"><img src="/5afedf1d1e6ea005384f8f15/v104/images/play-icon4566.png" style="height:17px;margin:0;padding:0;margin-top:-3px;padding-left:5px"></a>
+                        <a href="https://itunes.apple.com/us/app/thyrocare/id1117762349?ls=1&mt=8" style="margin-right:2em" title="Download from itunes store" target="_blank">| iOS</a> <a href="#" style="text-decoration:none;cursor:default;">Free Home Visit</a> <a href="tel: +91 22 - 3090 0000"><span class="glyphicon glyphicon-earphone"></span> +91 22 - 3090 0000 </a>  <a href="tel: +91 22 - 6712 3400">/ 6712 3400 </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <nav class="navbar navbar-inverse menu">
+            <div class="container remove-max-width">
+                <div class="col-md-2 top-location">
+                    <div class="navbar-header">
+
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                        </button>
+                                                    <script>
+                                getGeoLocation()
+                            </script>
+                        <a id="location" class="navbar-brand" style="cursor:pointer;font-weight:800;font-size:1em;margin-top:5px;display: none;" title="auto detect your location" onclick="getGeoLocation();">
+                                <span class="glyphicon glyphicon-map-marker" style="top:3px;padding-right:3px"></span>
+                        </a>
+                        <a class="header-nav-link" style="border-bottom:2px solid #c1202e;display:inline-block;cursor:pointer;text-shadow: 0 -1px 0 rgba(0,0,0,.25);    color: #fff !important;padding: 10px;font-weight: 800;    position: relative;" id="cartPageLinkMobile" onclick="fncCartClick();">
+                            Cart <span style="position:Relative">
+                                <span class="cart-number"></span>
+                                <img src="/5afedf1d1e6ea005384f8f15/v104/images/cart6349.png" style="height:20px">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5 topform">
+                    <form action="#" class="search-form" onsubmit="performSearch(this); return false">
+                        <div class="form-group has-feedback search-Box" style="margin-top:5px">
+                            <label for="search" class="sr-only">Search</label>
+                            <input type="text" class="form-control" style="font-size:.9em" name="search" id="search" onblur="emptySearch();" onkeyup="callSearchOnType(); return false" onfocus="callSearchOnType(); return false" onclick="callSearchOnType(); return false" placeholder="Search for a test or profile" autocomplete="off"> <span class="glyphicon glyphicon-search form-control-feedback" style="cursor:pointer;pointer-events:auto" id="performSearch" onclick="performSearch()"></span>
+                            <div class="search-Box-result" id="searchedListBox" style="display: none;">
+                                <ul class="search-Box-result-list"></ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-5 top-main">
+                    <div id="navbar" class="collapse navbar-collapse" style="overflow:inherit">
+                        <ul class="nav navbar-nav ul-nav-header">
+                            <li class="dropdown">
+                                <a class="header-nav-link" style="display:inline-block" id="bookPageLink" href="/Cart/Tests">Book</a>
+                            </li>
+                                <li><a class="header-nav-link" style="display:inline-block" onclick="signInHandler()" id="SignIn" href="/SignIn">Sign In</a></li>
+                            <li>
+                                <a class="header-nav-link" style="border-bottom:2px solid #c1202e;display:inline-block;cursor:pointer;" id="cartPageLink" onclick="fncCartClick();">
+                                    Cart <span style="position:Relative">
+                                        <span class="cart-number"></span>
+                                        <img src="/5afedf1d1e6ea005384f8f15/v104/images/cart6349.png" style="height:20px">
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <script src="/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="/JScripts/Session.js"></script>
+    <script src="/JScripts/Home.js"></script>
+
+<style>
+    .carousel-indicators .active {
+        width: 12px;
+        height: 12px;
+        margin: 0;
+        background-color: #0077cc;
+    }
+
+    .carousel-indicators li {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 1px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: #000 \9;
+        background-color: rgba(0, 0, 0, 0);
+        border: 1px solid #0054a3;
+        border-radius: 10px;
+    }
+    .owl-next {
+    margin-right: 20px !important;
+    }
+    .owl-prev {
+        margin-left: 20px !important;
+    }
+</style>
+<div class="content">
+    <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic1" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic1" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <a href="https://covid.thyrocare.com/covid-19.aspx" target="_blank">
+                    <img src="/images/WTC_Option2_1920 x 468.jpg" alt="Covid 19" class="img-responsive" />
+                    <div class="carousel-caption carousel-caption-responsive"></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="home/covid19" target="_blank">
+                    <img src="/images/Website_Banner.jpg" alt="COVID 19" class="img-responsive">
+                    <div class="carousel-caption carousel-caption-responsive"></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="https://covid.thyrocare.com/covid-19.aspx" target="_blank">
+                    <img src="/images/WTC_Option1_1920 x 468.jpg" alt="Covid 19" class="img-responsive" />
+                    <div class="carousel-caption carousel-caption-responsive"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+            <section class="offer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6 offer-off">
+<h2><span class="sub-topic">Offers</span> <span class="bracket">1</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div>
+                <div class="carousel slide" data-ride="carousel">
+                    <div class="container">
+                        <div class="owl-carousel owl-theme" id="carousel-example-generic6">
+                                                            <div class="item offer-box" id="PROJ1013548">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size img-responsive" src="#" alt="...">
+                                        <a href="Cart/ProfileDetail?Offer=PALEO PROFILE - M"><h4 class="index-card-names text-center">DSA BMS WELLNESS D</h4></a>
+                                        <h6>79 Tests</h6>
+                                        <strike>
+                                            <i class="fa fa-inr" style="font-size:20px;color:#000"></i>
+1500                                        </strike>
+                                        <h5 class="thyro">
+                                            <i class="fa fa-inr" style="font-size:20px;color:#000"></i>
+1750                                        </h5>
+                                        <div style="        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-bottom: 10px
+">Valid till: 19-08-2020</div>
+</a>
+<button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+    Book
+    <span class="hide">{ &quot;code&quot;: &quot;PROJ1013548&quot;,&quot;ben_min&quot;: &quot;1&quot;,&quot;ben_multiple&quot;: &quot;1&quot;, &quot;fasting&quot;: &quot;CF&quot;, &quot;name&quot;: &quot;DSA BMS WELLNESS D&quot;, &quot;type&quot;: &quot;OFFER&quot;, &quot;group_name&quot; : &quot;null&quot;, &quot;test_count&quot; : &quot;79&quot;, &quot;testnames&quot; : &quot;PALEO PROFILE - M&quot;, &quot;rate&quot;: { &quot;null&quot;: &quot;&quot;, &quot;b2c&quot;: &quot;1500&quot;, &quot;id&quot;: &quot;PROJ1013548&quot;, &quot;offer_rate&quot;: &quot;1750&quot;, &quot;pay_amt&quot;: &quot;null&quot; }, &quot;related_tests&quot; : [] }</span>
+</button>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="most-booked">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6 offer-off">
+<h2>
+                                <span class="sub-topic">
+                                    Most Frequently Booked
+                                </span> <span class="bracket">10</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div>
+                <div id="owl-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="container">
+                        <div class="owl-carousel owl-theme">
+                                <div class="item most-box" id="P001">
+                                    <a class="no-underline">
+                                        <img style="max-width: unset; width: auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P001/Mobile App_Offer_Thyroid Profile (T3T4TSH)_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=T3-T4-TSH"><h4 class="index-card-names text-center">T3-T4-TSH</h4></a>
+                                        <h6>3 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i> 400</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P001&quot;, &quot;fasting&quot;: &quot;NF&quot;, &quot;name&quot;: &quot;T3-T4-TSH&quot;, &quot;type&quot;: &quot;PROFILE&quot;, &quot;group_name&quot; : &quot;THYROID&quot;, &quot;test_count&quot; : &quot;3&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;400&quot;, &quot;id&quot;: &quot;P001&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;400&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item most-box" id="P179">
+                                    <a class="no-underline">
+                                        <img style="max-width: unset; width: auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P179/Aarogyam 1.2_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=AAROGYAM 1.2"><h4 class="index-card-names text-center">AAROGYAM 1.2</h4></a>
+                                        <h6>61 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i> 1500</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P179&quot;, &quot;fasting&quot;: &quot;CF&quot;, &quot;name&quot;: &quot;AAROGYAM 1.2&quot;, &quot;type&quot;: &quot;POP&quot;, &quot;group_name&quot; : &quot;WELLNESS&quot;, &quot;test_count&quot; : &quot;61&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;1500&quot;, &quot;id&quot;: &quot;P179&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;1500&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item most-box" id="P175">
+                                    <a class="no-underline">
+                                        <img style="max-width: unset; width: auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P175/Aarogyam 1.1_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=AAROGYAM 1.1"><h4 class="index-card-names text-center">AAROGYAM 1.1</h4></a>
+                                        <h6>35 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i> 1000</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P175&quot;, &quot;fasting&quot;: &quot;CF&quot;, &quot;name&quot;: &quot;AAROGYAM 1.1&quot;, &quot;type&quot;: &quot;POP&quot;, &quot;group_name&quot; : &quot;WELLNESS&quot;, &quot;test_count&quot; : &quot;35&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;1000&quot;, &quot;id&quot;: &quot;P175&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;1000&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item most-box" id="P207">
+                                    <a class="no-underline">
+                                        <img style="max-width: unset; width: auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P207/Aarogyam 1.4_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=AAROGYAM 1.4"><h4 class="index-card-names text-center">AAROGYAM 1.4</h4></a>
+                                        <h6>96 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i> 2500</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P207&quot;, &quot;fasting&quot;: &quot;CF&quot;, &quot;name&quot;: &quot;AAROGYAM 1.4&quot;, &quot;type&quot;: &quot;POP&quot;, &quot;group_name&quot; : &quot;WELLNESS&quot;, &quot;test_count&quot; : &quot;96&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;2500&quot;, &quot;id&quot;: &quot;P207&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;2500&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item most-box" id="P035">
+                                    <a class="no-underline">
+                                        <img style="max-width: unset; width: auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P035/LipidProfile_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=LIPID PROFILE"><h4 class="index-card-names text-center">LIPID PROFILE</h4></a>
+                                        <h6>8 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i> 400</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P035&quot;, &quot;fasting&quot;: &quot;CF&quot;, &quot;name&quot;: &quot;LIPID PROFILE&quot;, &quot;type&quot;: &quot;PROFILE&quot;, &quot;group_name&quot; : &quot;HEART HEALTH&quot;, &quot;test_count&quot; : &quot;8&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;400&quot;, &quot;id&quot;: &quot;P035&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;400&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item most-box" id="P180">
+                                    <a class="no-underline">
+                                        <img style="max-width: unset; width: auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P180/Aarogyam 1.3_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=AAROGYAM 1.3"><h4 class="index-card-names text-center">AAROGYAM 1.3</h4></a>
+                                        <h6>90 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i> 2000</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P180&quot;, &quot;fasting&quot;: &quot;CF&quot;, &quot;name&quot;: &quot;AAROGYAM 1.3&quot;, &quot;type&quot;: &quot;POP&quot;, &quot;group_name&quot; : &quot;WELLNESS&quot;, &quot;test_count&quot; : &quot;90&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;2000&quot;, &quot;id&quot;: &quot;P180&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;2000&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item most-box" id="P270">
+                                    <a class="no-underline">
+                                        <img style="max-width: unset; width: auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P270/Aarogyam 1.5_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=AAROGYAM 1.5"><h4 class="index-card-names text-center">AAROGYAM 1.5</h4></a>
+                                        <h6>99 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i> 3000</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P270&quot;, &quot;fasting&quot;: &quot;CF&quot;, &quot;name&quot;: &quot;AAROGYAM 1.5&quot;, &quot;type&quot;: &quot;POP&quot;, &quot;group_name&quot; : &quot;WELLNESS&quot;, &quot;test_count&quot; : &quot;99&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;3000&quot;, &quot;id&quot;: &quot;P270&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;3000&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item most-box" id="P201">
+                                    <a class="no-underline">
+                                        <img style="max-width: unset; width: auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P201/Aarogyam 1.7_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=AAROGYAM 1.7"><h4 class="index-card-names text-center">AAROGYAM 1.7</h4></a>
+                                        <h6>102 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i> 4000</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P201&quot;, &quot;fasting&quot;: &quot;CF&quot;, &quot;name&quot;: &quot;AAROGYAM 1.7&quot;, &quot;type&quot;: &quot;POP&quot;, &quot;group_name&quot; : &quot;WELLNESS&quot;, &quot;test_count&quot; : &quot;102&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;4000&quot;, &quot;id&quot;: &quot;P201&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;4000&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item most-box" id="H6">
+                                    <a class="no-underline">
+                                        <img style="max-width: unset; width: auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/H6/H6_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=HEMOGRAM - 6 PART (DIFF)"><h4 class="index-card-names text-center">HEMOGRAM - 6 PART (DIFF)</h4></a>
+                                        <h6>24 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i> 300</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;H6&quot;, &quot;fasting&quot;: &quot;NF&quot;, &quot;name&quot;: &quot;HEMOGRAM - 6 PART (DIFF)&quot;, &quot;type&quot;: &quot;PROFILE&quot;, &quot;group_name&quot; : &quot;WELLNESS&quot;, &quot;test_count&quot; : &quot;24&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;300&quot;, &quot;id&quot;: &quot;H6&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;300&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item most-box" id="P208">
+                                    <a class="no-underline">
+                                        <img style="max-width: unset; width: auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P208/Aarogyam 1.6_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=AAROGYAM 1.6"><h4 class="index-card-names text-center">AAROGYAM 1.6</h4></a>
+                                        <h6>101 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i> 3500</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P208&quot;, &quot;fasting&quot;: &quot;CF&quot;, &quot;name&quot;: &quot;AAROGYAM 1.6&quot;, &quot;type&quot;: &quot;POP&quot;, &quot;group_name&quot; : &quot;WELLNESS&quot;, &quot;test_count&quot; : &quot;101&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;3500&quot;, &quot;id&quot;: &quot;P208&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;3500&quot; } }</span>
+                                    </button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="catogorise">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6 offer-off">
+<h2><span class="sub-topic">Profiles</span> <span class="bracket">25</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div>
+                <div id="owl-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="container">
+                        <div class="owl-carousel owl-theme">
+                                <div class="item category-box" id="P001">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P001/Mobile App_Offer_Thyroid Profile (T3T4TSH)_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=T3-T4-TSH"><h4 class="index-card-names text-center">T3-T4-TSH</h4></a>
+                                        <h6>3 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i>400</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P001&quot;, &quot;fasting&quot;: &quot;NF&quot;, &quot;name&quot;: &quot;T3-T4-TSH&quot;, &quot;type&quot;: &quot;PROFILE&quot;, &quot;group_name&quot; : &quot;THYROID&quot;, &quot;test_count&quot; : &quot;3&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;400&quot;, &quot;id&quot;: &quot;P001&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;400&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item category-box" id="P179">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P179/Aarogyam 1.2_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=AAROGYAM 1.2"><h4 class="index-card-names text-center">AAROGYAM 1.2</h4></a>
+                                        <h6>61 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i>1500</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P179&quot;, &quot;fasting&quot;: &quot;CF&quot;, &quot;name&quot;: &quot;AAROGYAM 1.2&quot;, &quot;type&quot;: &quot;POP&quot;, &quot;group_name&quot; : &quot;WELLNESS&quot;, &quot;test_count&quot; : &quot;61&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;1500&quot;, &quot;id&quot;: &quot;P179&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;1500&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item category-box" id="P175">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P175/Aarogyam 1.1_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=AAROGYAM 1.1"><h4 class="index-card-names text-center">AAROGYAM 1.1</h4></a>
+                                        <h6>35 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i>1000</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P175&quot;, &quot;fasting&quot;: &quot;CF&quot;, &quot;name&quot;: &quot;AAROGYAM 1.1&quot;, &quot;type&quot;: &quot;POP&quot;, &quot;group_name&quot; : &quot;WELLNESS&quot;, &quot;test_count&quot; : &quot;35&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;1000&quot;, &quot;id&quot;: &quot;P175&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;1000&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item category-box" id="P207">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P207/Aarogyam 1.4_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=AAROGYAM 1.4"><h4 class="index-card-names text-center">AAROGYAM 1.4</h4></a>
+                                        <h6>96 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i>2500</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P207&quot;, &quot;fasting&quot;: &quot;CF&quot;, &quot;name&quot;: &quot;AAROGYAM 1.4&quot;, &quot;type&quot;: &quot;POP&quot;, &quot;group_name&quot; : &quot;WELLNESS&quot;, &quot;test_count&quot; : &quot;96&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;2500&quot;, &quot;id&quot;: &quot;P207&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;2500&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item category-box" id="P035">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P035/LipidProfile_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=LIPID PROFILE"><h4 class="index-card-names text-center">LIPID PROFILE</h4></a>
+                                        <h6>8 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i>400</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P035&quot;, &quot;fasting&quot;: &quot;CF&quot;, &quot;name&quot;: &quot;LIPID PROFILE&quot;, &quot;type&quot;: &quot;PROFILE&quot;, &quot;group_name&quot; : &quot;HEART HEALTH&quot;, &quot;test_count&quot; : &quot;8&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;400&quot;, &quot;id&quot;: &quot;P035&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;400&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item category-box" id="P037">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P037/LiverFunctionProfile_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=LIVER FUNCTION TESTS"><h4 class="index-card-names text-center">LIVER FUNCTION TESTS</h4></a>
+                                        <h6>11 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i>400</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P037&quot;, &quot;fasting&quot;: &quot;CF&quot;, &quot;name&quot;: &quot;LIVER FUNCTION TESTS&quot;, &quot;type&quot;: &quot;PROFILE&quot;, &quot;group_name&quot; : &quot;WELLNESS&quot;, &quot;test_count&quot; : &quot;11&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;400&quot;, &quot;id&quot;: &quot;P037&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;400&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item category-box" id="P180">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P180/Aarogyam 1.3_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=AAROGYAM 1.3"><h4 class="index-card-names text-center">AAROGYAM 1.3</h4></a>
+                                        <h6>90 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i>2000</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P180&quot;, &quot;fasting&quot;: &quot;CF&quot;, &quot;name&quot;: &quot;AAROGYAM 1.3&quot;, &quot;type&quot;: &quot;POP&quot;, &quot;group_name&quot; : &quot;WELLNESS&quot;, &quot;test_count&quot; : &quot;90&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;2000&quot;, &quot;id&quot;: &quot;P180&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;2000&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item category-box" id="P074">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P074/KIDPRO_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=KIDPRO"><h4 class="index-card-names text-center">KIDPRO</h4></a>
+                                        <h6>5 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i>400</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P074&quot;, &quot;fasting&quot;: &quot;CF&quot;, &quot;name&quot;: &quot;KIDPRO&quot;, &quot;type&quot;: &quot;PROFILE&quot;, &quot;group_name&quot; : &quot;WELLNESS&quot;, &quot;test_count&quot; : &quot;5&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;400&quot;, &quot;id&quot;: &quot;P074&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;400&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item category-box" id="P074">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P074/KIDPRO_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=KIDPRO"><h4 class="index-card-names text-center">KIDPRO</h4></a>
+                                        <h6>5 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i>400</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P074&quot;, &quot;fasting&quot;: &quot;CF&quot;, &quot;name&quot;: &quot;KIDPRO&quot;, &quot;type&quot;: &quot;PROFILE&quot;, &quot;group_name&quot; : &quot;WELLNESS&quot;, &quot;test_count&quot; : &quot;5&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;400&quot;, &quot;id&quot;: &quot;P074&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;400&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item category-box" id="P519">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P519/AA-X_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=AAROGYAM X"><h4 class="index-card-names text-center">AAROGYAM X</h4></a>
+                                        <h6>129 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i>5000</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P519&quot;, &quot;fasting&quot;: &quot;CF&quot;, &quot;name&quot;: &quot;AAROGYAM X&quot;, &quot;type&quot;: &quot;POP&quot;, &quot;group_name&quot; : &quot;WELLNESS&quot;, &quot;test_count&quot; : &quot;129&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;5000&quot;, &quot;id&quot;: &quot;P519&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;5000&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item category-box" id="P270">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P270/Aarogyam 1.5_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=AAROGYAM 1.5"><h4 class="index-card-names text-center">AAROGYAM 1.5</h4></a>
+                                        <h6>99 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i>3000</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P270&quot;, &quot;fasting&quot;: &quot;CF&quot;, &quot;name&quot;: &quot;AAROGYAM 1.5&quot;, &quot;type&quot;: &quot;POP&quot;, &quot;group_name&quot; : &quot;WELLNESS&quot;, &quot;test_count&quot; : &quot;99&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;3000&quot;, &quot;id&quot;: &quot;P270&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;3000&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item category-box" id="P201">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P201/Aarogyam 1.7_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=AAROGYAM 1.7"><h4 class="index-card-names text-center">AAROGYAM 1.7</h4></a>
+                                        <h6>102 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i>4000</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P201&quot;, &quot;fasting&quot;: &quot;CF&quot;, &quot;name&quot;: &quot;AAROGYAM 1.7&quot;, &quot;type&quot;: &quot;POP&quot;, &quot;group_name&quot; : &quot;WELLNESS&quot;, &quot;test_count&quot; : &quot;102&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;4000&quot;, &quot;id&quot;: &quot;P201&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;4000&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item category-box" id="P418">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P418/Aarogyam 1.8_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=AAROGYAM 1.8"><h4 class="index-card-names text-center">AAROGYAM 1.8</h4></a>
+                                        <h6>110 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i>4500</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P418&quot;, &quot;fasting&quot;: &quot;CF&quot;, &quot;name&quot;: &quot;AAROGYAM 1.8&quot;, &quot;type&quot;: &quot;POP&quot;, &quot;group_name&quot; : &quot;WELLNESS&quot;, &quot;test_count&quot; : &quot;110&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;4500&quot;, &quot;id&quot;: &quot;P418&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;4500&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item category-box" id="P039">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P039/IronDeficiencyProfile_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=IRON DEFICIENCY PROFILE"><h4 class="index-card-names text-center">IRON DEFICIENCY PROFILE</h4></a>
+                                        <h6>3 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i>400</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P039&quot;, &quot;fasting&quot;: &quot;CF&quot;, &quot;name&quot;: &quot;IRON DEFICIENCY PROFILE&quot;, &quot;type&quot;: &quot;PROFILE&quot;, &quot;group_name&quot; : &quot;WELLNESS&quot;, &quot;test_count&quot; : &quot;3&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;400&quot;, &quot;id&quot;: &quot;P039&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;400&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item category-box" id="P226">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P226/Vitamin_D_Profile_index.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=VITAMIN D PROFILE"><h4 class="index-card-names text-center">VITAMIN D PROFILE</h4></a>
+                                        <h6>3 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i>1250</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P226&quot;, &quot;fasting&quot;: &quot;NF&quot;, &quot;name&quot;: &quot;VITAMIN D PROFILE&quot;, &quot;type&quot;: &quot;PROFILE&quot;, &quot;group_name&quot; : &quot;VITAMIN&quot;, &quot;test_count&quot; : &quot;3&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;1250&quot;, &quot;id&quot;: &quot;P226&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;1250&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item category-box" id="P233">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P233/FatSolubleVitaminProfile_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=FAT - SOLUBLE VITAMINS PROFILE"><h4 class="index-card-names text-center">FAT - SOLUBLE VITAMINS PROFILE</h4></a>
+                                        <h6>6 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i>2500</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P233&quot;, &quot;fasting&quot;: &quot;NF&quot;, &quot;name&quot;: &quot;FAT - SOLUBLE VITAMINS PROFILE&quot;, &quot;type&quot;: &quot;PROFILE&quot;, &quot;group_name&quot; : &quot;VITAMIN&quot;, &quot;test_count&quot; : &quot;6&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;2500&quot;, &quot;id&quot;: &quot;P233&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;2500&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item category-box" id="P178">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P178/CardiacRiskMarker_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=CARDIAC RISK MARKERS"><h4 class="index-card-names text-center">CARDIAC RISK MARKERS</h4></a>
+                                        <h6>5 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i>1300</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P178&quot;, &quot;fasting&quot;: &quot;CF&quot;, &quot;name&quot;: &quot;CARDIAC RISK MARKERS&quot;, &quot;type&quot;: &quot;PROFILE&quot;, &quot;group_name&quot; : &quot;WELLNESS&quot;, &quot;test_count&quot; : &quot;5&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;1300&quot;, &quot;id&quot;: &quot;P178&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;1300&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item category-box" id="P221">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P221/ChildrenNutritionandtoxicityProfile_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=CHILDREN NUTRITION AND TOXICITY PROFILE "><h4 class="index-card-names text-center">CHILDREN NUTRITION AND TOXICITY PROFILE </h4></a>
+                                        <h6>70 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i>3000</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P221&quot;, &quot;fasting&quot;: &quot;CF&quot;, &quot;name&quot;: &quot;CHILDREN NUTRITION AND TOXICITY PROFILE &quot;, &quot;type&quot;: &quot;PROFILE&quot;, &quot;group_name&quot; : &quot;CHILD WELLNESS&quot;, &quot;test_count&quot; : &quot;70&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;3000&quot;, &quot;id&quot;: &quot;P221&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;3000&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item category-box" id="P208">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P208/Aarogyam 1.6_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=AAROGYAM 1.6"><h4 class="index-card-names text-center">AAROGYAM 1.6</h4></a>
+                                        <h6>101 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i>3500</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P208&quot;, &quot;fasting&quot;: &quot;CF&quot;, &quot;name&quot;: &quot;AAROGYAM 1.6&quot;, &quot;type&quot;: &quot;POP&quot;, &quot;group_name&quot; : &quot;WELLNESS&quot;, &quot;test_count&quot; : &quot;101&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;3500&quot;, &quot;id&quot;: &quot;P208&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;3500&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item category-box" id="P651">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P651/FOODINTOLERANCEPROFILE_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=FOOD INTOLERANCE PROFILE"><h4 class="index-card-names text-center">FOOD INTOLERANCE PROFILE</h4></a>
+                                        <h6>1 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i>10000</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P651&quot;, &quot;fasting&quot;: &quot;NF&quot;, &quot;name&quot;: &quot;FOOD INTOLERANCE PROFILE&quot;, &quot;type&quot;: &quot;PROFILE&quot;, &quot;group_name&quot; : &quot;FOOD INTOLERANCE&quot;, &quot;test_count&quot; : &quot;1&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;10000&quot;, &quot;id&quot;: &quot;P651&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;10000&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item category-box" id="H6">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/H6/H6_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=HEMOGRAM - 6 PART (DIFF)"><h4 class="index-card-names text-center">HEMOGRAM - 6 PART (DIFF)</h4></a>
+                                        <h6>24 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i>300</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;H6&quot;, &quot;fasting&quot;: &quot;NF&quot;, &quot;name&quot;: &quot;HEMOGRAM - 6 PART (DIFF)&quot;, &quot;type&quot;: &quot;PROFILE&quot;, &quot;group_name&quot; : &quot;WELLNESS&quot;, &quot;test_count&quot; : &quot;24&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;300&quot;, &quot;id&quot;: &quot;H6&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;300&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item category-box" id="P314">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P314/MobileApp_New Born Screening Profile_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=NEW BORN SCREENING PROFILE"><h4 class="index-card-names text-center">NEW BORN SCREENING PROFILE</h4></a>
+                                        <h6>42 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i>7000</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P314&quot;, &quot;fasting&quot;: &quot;NF&quot;, &quot;name&quot;: &quot;NEW BORN SCREENING PROFILE&quot;, &quot;type&quot;: &quot;PROFILE&quot;, &quot;group_name&quot; : &quot;CHILD WELLNESS&quot;, &quot;test_count&quot; : &quot;42&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;7000&quot;, &quot;id&quot;: &quot;P314&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;7000&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item category-box" id="P555">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P555/skin_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=SKIN CARE PROFILE"><h4 class="index-card-names text-center">SKIN CARE PROFILE</h4></a>
+                                        <h6>52 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i>5000</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P555&quot;, &quot;fasting&quot;: &quot;NF&quot;, &quot;name&quot;: &quot;SKIN CARE PROFILE&quot;, &quot;type&quot;: &quot;PROFILE&quot;, &quot;group_name&quot; : &quot;WELLNESS&quot;, &quot;test_count&quot; : &quot;52&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;5000&quot;, &quot;id&quot;: &quot;P555&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;5000&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item category-box" id="P210">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P210/Steroid_Profile_index.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=STEROID PROFILE"><h4 class="index-card-names text-center">STEROID PROFILE</h4></a>
+                                        <h6>14 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i>3000</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P210&quot;, &quot;fasting&quot;: &quot;NF&quot;, &quot;name&quot;: &quot;STEROID PROFILE&quot;, &quot;type&quot;: &quot;PROFILE&quot;, &quot;group_name&quot; : &quot;VITAMIN&quot;, &quot;test_count&quot; : &quot;14&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;3000&quot;, &quot;id&quot;: &quot;P210&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;3000&quot; } }</span>
+                                    </button>
+                                </div>
+                                <div class="item category-box" id="P292">
+                                    <a class="no-underline">
+                                        <img style="max-width:unset;width:auto" class="img-base-size" src="https://www.thyrocare.com/API_Beta/Images/B2C/PROFILE/P292/Vitamin B Complex Profile_INDEX.jpg" alt="...">
+                                        <a href="Cart/ProfileDetail?Profile=VITAMIN B COMPLEX PROFILE"><h4 class="index-card-names text-center">VITAMIN B COMPLEX PROFILE</h4></a>
+                                        <h6>8 Tests</h6>
+                                        <h5 class="thyro"><i class="fa fa-inr" style="font-size:20px;color:#000"></i>2500</h5>
+                                    </a>
+                                    <button class="button cta-button promo-button" onclick="addOrBuyAction_Home(event, this, true)" href="javascript:void(0)">
+                                        Book
+                                        <span class="hide">{&quot;code&quot;: &quot;P292&quot;, &quot;fasting&quot;: &quot;NF&quot;, &quot;name&quot;: &quot;VITAMIN B COMPLEX PROFILE&quot;, &quot;type&quot;: &quot;PROFILE&quot;, &quot;group_name&quot; : &quot;VITAMIN&quot;, &quot;test_count&quot; : &quot;8&quot;, &quot;testnames&quot; : &quot;null&quot;, &quot;rate&quot;: { &quot;b2b&quot;: &quot;null&quot;, &quot;b2c&quot;: &quot;2500&quot;, &quot;id&quot;: &quot;P292&quot;, &quot;offer_rate&quot;: &quot;null&quot;, &quot;pay_amt&quot;: &quot;2500&quot; } }</span>
+                                    </button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <div id="carousel-example-generic4" class="carousel slide hours" data-ride="carousel">
+        <div class="container">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-3 col-md-3 report">
+                            <img src="/5afedf1d1e6ea005384f8f15/v104/images/24x7-Online-reports2631.png">
+                        </div>
+                        <div class="col-xs-12 col-sm-9 col-md-9 result">
+                            <h2>Get your results in 24 - 48 hours.</h2>
+                            <div class="t-and-c">* Terms &amp; Conditions Apply</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-3 col-md-3 report">
+                            <img style="max-width:150px" src="/5afedf1d1e6ea005384f8f15/v104/images/Free-Home-Service9585.png">
+                        </div>
+                        <div class="col-xs-12 col-sm-9 col-md-9 result">
+                            <h2>Avail free home service in majority cities.</h2>
+                            <div class="t-and-c">* Terms &amp; Conditions Apply</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-3 col-md-3 report">
+                            <img style="max-width:150px" src="/5afedf1d1e6ea005384f8f15/v104/images/Reports-on-Smartphone4344.png">
+                        </div>
+                        <div class="col-xs-12 col-sm-9 col-md-9 result">
+                            <h2>Check emailed reports on your smart phone.</h2>
+                            <div class="t-and-c">* Terms &amp; Conditions Apply</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-3 col-md-3 report">
+                            <img style="max-width:150px" src="/5afedf1d1e6ea005384f8f15/v104/images/Best-Wellness-Packages5597.png">
+                        </div>
+                        <div class="col-xs-12 col-sm-9 col-md-9 result">
+                            <h2>Choose the wellness packages that is priced with love.</h2>
+                            <div class="t-and-c">* Terms &amp; Conditions Apply</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-3 col-md-3 report">
+                            <img style="max-width:150px" src="/5afedf1d1e6ea005384f8f15/v104/images/Save-Tax4309.png">
+                        </div>
+                        <div class="col-xs-12 col-sm-9 col-md-9 result">
+                            <h2>Save tax upto Rs. 5000.</h2>
+                            <div class="t-and-c">* Terms &amp; Conditions Apply</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-3 col-md-3 report">
+                            <img style="max-width:150px" src="/5afedf1d1e6ea005384f8f15/v104/images/Global-Technology4755.png">
+                        </div>
+                        <div class="col-xs-12 col-sm-9 col-md-9 result">
+                            <h2>A lab with Global Technology &amp; Quality Accreditation.</h2>
+                            <div class="t-and-c">* Terms &amp; Conditions Apply</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-3 col-md-3 report">
+                            <img style="max-width:150px" src="/5afedf1d1e6ea005384f8f15/v104/images/Earn-Bonus-Points3723.png">
+                        </div>
+                        <div class="col-xs-12 col-sm-9 col-md-9 result">
+                            <h2>Introducing Thyroapp &#x2013; Easy way to book a test and earn bonus points.</h2>
+                            <div class="t-and-c">* Terms &amp; Conditions Apply</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><a class="left carousel-control" href="#carousel-example-generic4" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span></a>  <a class="right carousel-control"
+                                                                                                                                                                                                                                         href="#carousel-example-generic4" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+    </div>
+    <section class="covere">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-xs-12 col-md-12">
+                    <div class="row clearfix">
+                        <div class="col-xs-12 col-md-6">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/HvM-h7MXnlI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" style="width:100%;margin-top:12px;float:left"></iframe>
+                        </div>
+                        <div class="col-xs-12 col-md-6 covere-gotleft">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6F_vYGkho_4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" style="width:100%;margin-top:12px"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-12">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-8 covere-got">
+                            <h2>We got you covered!</h2>
+                            <div class="border"></div>
+                            <div class="row number-section">
+                                <div class="col-xs-4 col-sm-4 col-md-4 number">
+                                    <h3>22+</h3>
+                                    <p>Years of legacy</p>
+                                </div>
+                                <div class="col-xs-4 col-sm-4 col-md-4 number">
+                                    <h3>2200+</h3>
+                                    <p>Collection Centres</p>
+                                </div>
+                                <div class="col-xs-4 col-sm-4 col-md-4 number">
+                                    <h3>60000+</h3>
+                                    <p>Test done everyday</p>
+                                </div>
+                            </div>
+                            <div class="row covere-gotp">
+                                <p>
+                                    Thyrocare - a Leader and Trendsetter in the Diagnostic Industry has been always focused & committed towards raising awareness about Preventive Care across the country through its extensive network to offer world class
+                                    preventive diagnosis at affordable cost to a common man.
+                                </p>
+                                <a href="javascript:void(0);">
+                                    <button type="button" id="serving-agent" class="btn new-you">Covering 3000+ Locations</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4 covere-got">
+                            <div class="row covere-gotleftt">
+                                <h2 style="text-align:center;margin-bottom:20px">Accreditation</h2>
+                                <div class="iso-crous-wrapp">
+                                    <div class="iso-crous">
+                                        <div id="carousel-example-generic5" class="carousel slide" style="width:92%" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carousel-example-generic5" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carousel-example-generic5" data-slide-to="1"></li>
+                                                <li data-target="#carousel-example-generic5" data-slide-to="2"></li>
+                                            </ol>
+                                            <div class="carousel-inner" role="listbox">
+                                                <div class="item active">
+                                                    <div class="col-xs-4 col-sm-4 col-md-4 covere-gotleft-creous">
+                                                        <img style="width:auto;max-height:80px" class="img-responsive center-block" src="/v1/5af95cd90d7188052cd04e91/nabl-logo.-5b5c05ed9ca0fa04ffbd9211.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-xs-4 col-sm-4 col-md-4 covere-gotleft-creous">
+                                                        <img style="width:auto;max-height:80px" class="img-responsive center-block" src="/v1/5a995c1fa0198504f3aaad73/img6-5ac753dde7dd580507744d79-5acc8105afaa8b05078f9cea.png" alt="">
+                                                    </div>
+                                                    <div class="col-xs-4 col-sm-4 col-md-4 covere-gotleft-creous">
+                                                        <img style="width:auto;max-height:80px" class="img-responsive center-block" src="/v1/5a995c1fa0198504f3aaad73/img7-5ac753ee3ce4530547dfa940-5acc810f84ff7004fe69c9af.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="health-tips">
+        <div class="container">
+            <div class="row health-tips-h">
+                <a style="color:#000;text-decoration:none" href="/HealthTips"><h2>Health <span>Tips</span></h2></a>
+            </div>
+            <div class="row">
+                <div id="owl-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item" style="min-height:330px">
+                            <a href="/HealthTips/FamilyPreventiveCareStrategy">
+                                <div style="width:100%;height:120px;max-height:120px;overflow:hidden">
+                                    <img style="width:100%;height:100%;left:-1000%;right:-1000%;top:-1000%;bottom:-1000%" class="img-base-size img-responsive" src="https://cdn.kitsune.tools/v1/5af95cd90d7188052cd04e91/26-dec-5c230256ac5785000124e534.jpg"
+                                         alt="">
+                                </div>
+                                <div class="caption team-crl" style="height:195px;overflow:hidden">
+                                    <div style="height:165px;overflow:hidden">
+                                        <h4><span>Family preventive care strategy – Let’s make a Healthy Family</span></h4>
+                                        <h6>Family is priceless... Don’t leave any stone unturned to protect them... Act smart and choose wise... Choose Preventive care... </h6>
+                                    </div>
+                                    <p style="position:relative;right:0;color:#c1202e;bottom:0" class="btn btn-mini">&#xBB; Read More</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item" style="min-height:330px">
+                            <a href="/HealthTips/WhyHighHba1cNeedsImmediate">
+                                <div style="width:100%;height:120px;max-height:120px;overflow:hidden">
+                                    <img style="width:100%;height:100%;left:-1000%;right:-1000%;top:-1000%;bottom:-1000%" class="img-base-size img-responsive" src="https://cdn.kitsune.tools/v1/5af95cd90d7188052cd04e91/22-dec-image-5c1db3fff628560001465447.jpg"
+                                         alt="">
+                                </div>
+                                <div class="caption team-crl" style="height:195px;overflow:hidden">
+                                    <div style="height:165px;overflow:hidden">
+                                        <h4><span>Why high HbA1c needs immediate attention?</span></h4>
+                                        <h6>One step away to know pre-diabetic & diabetic status. Help yourself by reading more....</h6>
+                                    </div>
+                                    <p style="position:relative;right:0;color:#c1202e;bottom:0" class="btn btn-mini">&#xBB; Read More</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item" style="min-height:330px">
+                            <a href="/HealthTips/CanObesityIncreaseTheRisk">
+                                <div style="width:100%;height:120px;max-height:120px;overflow:hidden">
+                                    <img style="width:100%;height:100%;left:-1000%;right:-1000%;top:-1000%;bottom:-1000%" class="img-base-size img-responsive" src="https://cdn.kitsune.tools/v1/5af95cd90d7188052cd04e91/20-dec-image-5c1b20bff3a1fa0001c1e42a.jpg"
+                                         alt="">
+                                </div>
+                                <div class="caption team-crl" style="height:195px;overflow:hidden">
+                                    <div style="height:165px;overflow:hidden">
+                                        <h4><span>Can Obesity Increase the Risk of Cancer?</span></h4>
+                                        <h6>Putting on weight is not a sign of being healthy everytime. Is it your unhealthy diet or some serious illness? Read more...</h6>
+                                    </div>
+                                    <p style="position:relative;right:0;color:#c1202e;bottom:0" class="btn btn-mini">&#xBB; Read More</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item" style="min-height:330px">
+                            <a href="/HealthTips/WhyYourInabilityToLosewWeight">
+                                <div style="width:100%;height:120px;max-height:120px;overflow:hidden">
+                                    <img style="width:100%;height:100%;left:-1000%;right:-1000%;top:-1000%;bottom:-1000%" class="img-base-size img-responsive" src="https://cdn.kitsune.tools/v1/5af95cd90d7188052cd04e91/resized-5c188456af2cd10001d9de06.jpg"
+                                         alt="">
+                                </div>
+                                <div class="caption team-crl" style="height:195px;overflow:hidden">
+                                    <div style="height:165px;overflow:hidden">
+                                        <h4><span>Why your inability to lose weight is not just a willpower thing!</span></h4>
+                                        <h6>When gym, diet and positive thoughts doesn't help, monitoring your health might... Know more... Find out how?</h6>
+                                    </div>
+                                    <p style="position:relative;right:0;color:#c1202e;bottom:0" class="btn btn-mini">&#xBB; Read More</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item" style="min-height:330px">
+                            <a href="/HealthTips/GoodSleepForYoungHeart">
+                                <div style="width:100%;height:120px;max-height:120px;overflow:hidden">
+                                    <img style="width:100%;height:100%;left:-1000%;right:-1000%;top:-1000%;bottom:-1000%" class="img-base-size img-responsive" src="https://cdn.kitsune.tools/v1/5af95cd90d7188052cd04e91/1_1200x675px_-8-12-18-5c1480c6b896840001c8c353.jpg"
+                                         alt="">
+                                </div>
+                                <div class="caption team-crl" style="height:195px;overflow:hidden">
+                                    <div style="height:165px;overflow:hidden">
+                                        <h4><span>Good Sleep For a Young Heart</span></h4>
+                                        <h6>Did you know depriving the body of sleep can cause cardiovascular diseases and other such ailments. Read ahead to know how this mechanism works...</h6>
+                                    </div>
+                                    <p style="position:relative;right:0;color:#c1202e;bottom:0" class="btn btn-mini">&#xBB; Read More</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item" style="min-height:330px">
+                            <a href="/HealthTips/HowDoesLabRunQualityCon">
+                                <div style="width:100%;height:120px;max-height:120px;overflow:hidden">
+                                    <img style="width:100%;height:100%;left:-1000%;right:-1000%;top:-1000%;bottom:-1000%" class="img-base-size img-responsive" src="https://cdn.kitsune.tools/v1/5af95cd90d7188052cd04e91/1.-shutterstock_184446491-5c11d9a6c0326d00019dd23f.jpg"
+                                         alt="">
+                                </div>
+                                <div class="caption team-crl" style="height:195px;overflow:hidden">
+                                    <div style="height:165px;overflow:hidden">
+                                        <h4><span>How does a lab run Quality Control?</span></h4>
+                                        <h6>Quality is a serious business! Promise of safety and accuracy, Quality is more than a practice that can be brought with money!</h6>
+                                    </div>
+                                    <p style="position:relative;right:0;color:#c1202e;bottom:0" class="btn btn-mini">&#xBB; Read More</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item" style="min-height:330px">
+                            <a href="/HealthTips/HowFrequentlyShouldYouDo">
+                                <div style="width:100%;height:120px;max-height:120px;overflow:hidden">
+                                    <img style="width:100%;height:100%;left:-1000%;right:-1000%;top:-1000%;bottom:-1000%" class="img-base-size img-responsive" src="https://cdn.kitsune.tools/v1/5af95cd90d7188052cd04e91/shutterstock_233057014_1200x675-5c0dfa5bb5ddb60001833c96.jpg"
+                                         alt="">
+                                </div>
+                                <div class="caption team-crl" style="height:195px;overflow:hidden">
+                                    <div style="height:165px;overflow:hidden">
+                                        <h4><span>How frequently should you do a blood check?</span></h4>
+                                        <h6>Puzzled how you can check your health status? An accessible, efficient and effective option is to go for a blood check-up!! Continue reading to know more...</h6>
+                                    </div>
+                                    <p style="position:relative;right:0;color:#c1202e;bottom:0" class="btn btn-mini">&#xBB; Read More</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item" style="min-height:330px">
+                            <a href="/HealthTips/PatientSafetyMakingHealth">
+                                <div style="width:100%;height:120px;max-height:120px;overflow:hidden">
+                                    <img style="width:100%;height:100%;left:-1000%;right:-1000%;top:-1000%;bottom:-1000%" class="img-base-size img-responsive" src="https://cdn.kitsune.tools/v1/5af95cd90d7188052cd04e91/1200-x-675-5c0c98d8b5ddb6000183377b.jpg"
+                                         alt="">
+                                </div>
+                                <div class="caption team-crl" style="height:195px;overflow:hidden">
+                                    <div style="height:165px;overflow:hidden">
+                                        <h4><span> Patient Safety-Making Healthcare Safer</span></h4>
+                                        <h6>Do we always care about safety? Don’t we tend to ignore it many a times? Ignorance in patient safety can have dire consequences!! Read on...</h6>
+                                    </div>
+                                    <p style="position:relative;right:0;color:#c1202e;bottom:0" class="btn btn-mini">&#xBB; Read More</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+
+    <footer>
+        <section class="footer">
+            <div class="container" style="padding:10px 0">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-2 footer-logo2 col-md-offset-1">
+                        <a href="http://www.thyrocare.com" target="_blank">
+                            <img class="grey-scale" src="/5afedf1d1e6ea005384f8f15/v104/images/img106662.png">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-2 footer-logo2">
+                        <a href="http://www.focustb.com" target="_blank">
+                            <img class="grey-scale" src="/5afedf1d1e6ea005384f8f15/v104/images/img123819.png">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-2 footer-logo2">
+                        <a href="http://www.sugarscan.com" target="_blank">
+                            <img class="grey-scale" src="/5afedf1d1e6ea005384f8f15/v104/images/img118492.png">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-2 footer-logo2">
+                        <a href="http://www.nueclear.com" target="_blank">
+                            <img class="grey-scale" src="/5afedf1d1e6ea005384f8f15/v104/images/NHL-logo8320.png">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-2 footer-logo2">
+                        <a href="http://www.matrnity.com" target="_blank">
+                            <img class="grey-scale" src="/5afedf1d1e6ea005384f8f15/v104/images/matrnity-logo.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="section footer-classic context-dark bg-image" style="background: #282928;font-size: 14px;">
+            <div class="container">
+                <div class="row row-30">
+                    <div class="col-md-3">
+                        <h5><a href="/About">About Us</a></h5>
+                        <div class="">
+                            <p>Thyrocare Technologies Limited is India's first and most advanced Totally Automated Laboratory having its strong presence in more than 2000 cities / towns in India and internationally. <br /><a href="/About" title="Read more">Read more..<i class="fa fa-angle-double-right ml-2"></i></a></p>
+                        </div>
+                        <div>
+                            <div>
+                                <a href="http://www.facebook.com/pages/Thyrocare/114327285274942" target="_blank"><img src="/images/facebook-hexagon.png" width="15%" /></a>
+                                <a href="https://www.linkedin.com/company/thyrocare-technologies-ltd" target="_blank"><img src="/images/linkedin-hex-512.png" width="15%" /></a>
+                                <a href="https://twitter.com/thyrocare/" target="_blank" style="text-decoration:none"><img src="/images/twitter-hex-512.png" width="15%" /> </a>
+                                <a href="https://www.youtube.com/user/ThyrocareInfo/" target="_blank"><img src="/images/Youtube New.png" width="15%" />     </a>
+                            </div>
+                            <div>
+                                <a href="https://www.instagram.com/thyrocareindia/" target="_blank"><img src="/images/885329_media_512x512.png" width="15%" style="margin-left:8%" /></a>
+                                <a href="http://blog.thyrocare.com/" target="_blank" style="text-decoration:none"><img src="/images/hex-4-512.png" width="15%" />                                   </a>
+                                <a href="HTTPS://WA.ME/918691866066" target="_blank"><img src="/images/whatsapp-hexagon-gloss-social-media-512.png" width="15%" />     </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Contacts</h5>
+                        <dl class="contact-list">
+                            <dt>Address:</dt>
+                            <dd>D37/1, MIDC - Turbhe, Navi Mumbai - 400703</dd>
+                        </dl>
+                        <dl class="contact-list">
+                            <dt>Email:</dt>
+                            <dd>
+                                <a href="mailto:wellness@thyrocare.com">wellness@thyrocare.com</a>
+                            </dd>
+                        </dl>
+                        <dl class="contact-list">
+                            <dt>Phones:</dt>
+                            <dd>
+                                <a href="tel:#">022 - 3090 0000</a> / <a href="tel:#">6712 3400</a>
+                            </dd>
+                        </dl>
+                        <dl class="contact-list">
+                            <dt>Whatsapp:</dt>
+                            <dd>
+                                <a href="tel:#">8425944544</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Quick Links</h5>
+                        <ul class="nav-list">
+                            <li>
+                                <a href="/About/Company">Company</a>
+                            </li>
+                            <li>
+                                <a href="/Lab">Lab</a>
+                            </li>
+                            <li>
+                                <a href="/HealthTips">Health Tips</a>
+                            </li>
+                            <li>
+                                <a href="/Cart/Tests">Book</a>
+                            </li>
+                            <li>
+                                <a href="/PrivacyPolicy">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="/Contact">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="/News">News</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="col-md-6 col-xs-6" style="padding-left:0px">
+                            <h5><br></h5>
+                            <ul class="nav-list">
+                                <li>
+                                    <a href="/Orders">Orders & Report</a>
+                                </li>
+                                <li>
+                                    <a href="/BTech">BTech</a>
+                                </li>
+                                <li>
+                                    <a href="/Guide">Guide</a>
+                                </li>
+                                <li>
+                                    <a href="/FAQ">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="/Cancellation">Cancellation</a>
+                                </li>
+                                <li>
+                                    <a href="/Terms/Service">Terms of Service</a>
+                                </li>
+                                <li>
+                                    <a href="/Terms/Use">Terms of Use</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-xs-6">
+                            <h5><br><br></h5>
+                            <img src="/images/thyroapp 100 qr.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social-container">
+                <p class="social-copyright">Copyright © 2020 | Thyrocare Technologies Limited. All rights reserved.</p>
+            </div>
+        </div>
+        <script>
+            window.HFCHAT_CONFIG = {
+                EMBED_TOKEN: "9d7a5f40-3432-11e5-bba6-f50b31c9eb41",
+                ACCESS_TOKEN: "6e03ce817f2d4ab0ab7ff86dcba780e1",
+                HOST_URL: "https://www.happyfoxchat.com",
+                ASSETS_URL: "https://d1l7z5ofrj6ab8.cloudfront.net/visitor"
+            },
+                function () {
+                    var n = document.createElement("script"),
+                        t;
+                    n.type = "text/javascript";
+                    n.async = !0;
+                    n.src = window.HFCHAT_CONFIG.ASSETS_URL + "/js/widget-loader.js";
+                    t = document.getElementsByTagName("script")[0];
+                    t.parentNode.insertBefore(n, t)
+                }();
+        </script>
+        <link href="/styleC3.css" rel="stylesheet">
+    </footer>
+    <script src="/5afedf1d1e6ea005384f8f15/v104/js/bootstrap2622.min.js"></script>
+    <script src="/5afedf1d1e6ea005384f8f15/v104/js/owl.carousel1006.min.js"></script>
+    <script src="/JScripts/CartNew.js"></script>
+    <script src="/5afedf1d1e6ea005384f8f15/v104/js/cartnew2519.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("body").not("#searchedListBox *").click(function () {
+                var searchedBox = $("#searchedListBox");
+                var searchedBoxList = new $("#searchedListBox").find("ul");
+                searchedBoxList.html("");
+                searchedBox.hide();
+            });
+
+            $("#SignOut").click(function () {
+                localStorage.clear();
+            });
+
+            //$('.glyphicon-search').click(function () {
+            //    performSearch();
+            //});
+        });
+
+        if (localStorage.getItem(LOCALSTORAGE.MstTests) != null) {
+            var data = JSON.parse(localStorage.getItem(LOCALSTORAGE.MstTests));
+            var dataList = data.value;
+            var profileData = dataList.PROFILE;
+            var testsData = dataList.TESTS;
+            var offerData = dataList.OFFER;
+            var dataForSearch = [];
+
+            for (var i = 0; i < offerData.length; i++) {
+                dataForSearch.push({
+                    heading: 'Offer',
+                    title: offerData[i].name
+                });
+            }
+
+            for (var i = 0; i < profileData.length; i++) {
+                dataForSearch.push({
+                    heading: 'Profile',
+                    title: profileData[i].name
+                });
+            }
+
+            for (var t = 0; t < testsData.length; t++) {
+                dataForSearch.push({
+                    heading: 'Test',
+                    title: testsData[t].name
+                });
+            }
+        }
+
+        function callSearchOnType() {
+            var searchedBox = $("#searchedListBox");
+            var searchInputvalue = document.querySelector("#search").value.toLowerCase();
+            var SearchedResult = [];
+            if (searchInputvalue.length > 1) {
+                SearchedResult = dataForSearch.filter(function(data) {
+                    var sData = data.title.toLowerCase();
+                    return sData.indexOf(searchInputvalue) > -1
+                });
+                setSearchedList(SearchedResult);
+            } else {
+                searchedBox.hide();
+            }
+        }
+
+        function callSearchFromItemClick(event) {
+            var title = event.target.parentNode.querySelector(".title").innerHTML;
+            searchData(title);
+        }
+
+        function setSearchedList(srdata) {
+            var searchedBox = $("#searchedListBox");
+            var searchedBoxList = $("#searchedListBox").find("ul");
+            searchedBoxList.html("");
+            searchedBox.show();
+            for (var i = 0; i < srdata.length; i++) {
+                searchedBoxList.append("<li onclick='callSearchFromItemClick(event); return false'><div class='item'><span class='heading'>" + srdata[i].heading + "</span><span class='title'>" + srdata[i].title + "</span></div></li>");
+            }
+        }
+
+        function performSearch() {
+            debugger
+            var n = document.querySelector("#search").value;
+            searchData(n);
+        }
+
+        function searchData(searchedValue) {
+            window.location.href = "/Cart/Tests" + "?searchQuery=" + searchedValue;
+        }
+
+    function fncRedirectToCart() {
+            window.location.href = "/Cart";
+        }
+
+        function indexBuyNow(n, t, i) {
+            isBuyNow = i;
+            currentItemToAdd = t;
+            $("#beneficiaryContainer-modal").modal("show")
+        }
+        $(document).ready(function() {
+            function n() {}
+            $(".owl-carousel").owlCarousel({
+                loop: !0,
+                margin: 10,
+                responsiveClass: !0,
+                slideBy: 4,
+                navText: ["<i class='glyphicon glyphicon-chevron-left'><\/i>", "<i class='glyphicon glyphicon-chevron-right'><\/i>"],
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: !0
+                    },
+                    600: {
+                        items: 3,
+                        nav: !1
+                    },
+                    1e3: {
+                        items: 4,
+                        nav: !0,
+                        loop: !1,
+                        margin: 20
+                    }
+                }
+            });
+            localStorage.getItem("user_location") && localStorage.getItem("user_location") != "" || getGeoLocation();
+            n()
+        });
+
+    $("#carousel-example-generic6").on("slide.bs.carousel", function () { });
+
+    </script>
+    <script defer="defer" src="/gtag/js7532.js"></script>
+    <script>
+        function gtag() {
+            dataLayer.push(arguments)
+        }
+        window.dataLayer = window.dataLayer || [];
+        gtag("js", new Date);
+        gtag("config", "UA-109233743-1")
+    </script>
+    <script>
+        $('#SignOut').click(function () {
+            localStorage.setItem('SelectedItems', "");
+            localStorage.setItem('ITEMS', "");
+        });
+    </script>
+    <span style="display:none" id="GET-VALUE(THEME-ID)">5afedf1d1e6ea005384f8f15</span>
+    <span style="display:none" id="GET-VALUE(WEBSITE-ID)">5af95cd90d7188052cd04e91</span>
+    <a style="display:none" href="/Home" id="GET-URL(HOME)"></a>
+    <div class="modal1" id="homemodal" style="display:none;height: 100%;width: 100%;background-color: Black;filter: alpha(opacity=60);opacity: 0.6;-moz-opacity: 0.8;position:fixed;right: 0;bottom: 0;left: 0;z-index: 1050;overflow:hidden;outline:0">
+        <div class="center" style="z-index: 1100;margin: 300px auto;padding: 10px;width: 130px;background-color: White;border-radius: 10px;filter: alpha(opacity=100);opacity: 1;-moz-opacity: 1;">
+            <img alt="" src="/images/lg.double-ring-spinner.gif" style="height: 110px" />
+        </div>
+    </div>
+</body>
+</html>

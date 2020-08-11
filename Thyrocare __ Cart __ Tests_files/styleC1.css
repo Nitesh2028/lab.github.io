@@ -1,0 +1,24 @@
+.share {
+    cursor: pointer
+}
+
+#serving-agent {
+    pointer-events: none
+}
+
+.t-and-c {
+    font-size: 12px;
+    color: #fff;
+    text-align: right;
+    padding-right: 30px
+}
+
+@media(min-width: 1600px) {
+    .t-and-c {
+        right: -8rem
+    }
+}
+
+.k--keyword-footer {
+    display: none !important
+}
